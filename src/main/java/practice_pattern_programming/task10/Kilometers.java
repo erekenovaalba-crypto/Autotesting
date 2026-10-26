@@ -1,9 +1,9 @@
 package practice_pattern_programming.task10;
 
-public class Kilometrs implements Distance{
-    private  double kilometers;
+public class Kilometers implements Distance{
+    private final double kilometers;
 
-    public Kilometrs(double kilometers) {
+    public Kilometers(double kilometers) {
         this.kilometers = kilometers;
     }
 

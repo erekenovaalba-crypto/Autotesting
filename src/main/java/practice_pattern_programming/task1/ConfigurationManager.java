@@ -13,7 +13,7 @@ public class ConfigurationManager {
     private final String FILE_STORAGE_PATH = "./documents";
     private final String LOG_LEVEL = "HIGH";
     private final String LOG_FILE_PATH = "./log.history.log";
-    public static ConfigurationManager configurationManager;
+    private static ConfigurationManager configurationManager;
     private ConfigurationManager(){}
     public static ConfigurationManager getInstance(){
         if (configurationManager == null){

@@ -1,7 +1,7 @@
 package practice_pattern_programming.task10;
 
 public class Miles implements Distance{
-    private double miles;
+    private final double miles;
 
     public Miles(double miles) {
         this.miles = miles;

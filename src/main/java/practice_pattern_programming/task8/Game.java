@@ -3,10 +3,10 @@ package practice_pattern_programming.task8;
 public class Game {
     static void main() {
         Character deadpool = new Character.CharacterBuilder()
-                .setHealth("Способность регенерации")
-                .setArmor("Брони нет, красный костюм")
-                .setDamage("нет ущерба")
-                .setMagic("Способность круто драться как ниньзя")
+                .setHealth(10)
+                .setArmor(5)
+                .setDamage(4)
+                .setMagic(5)
                 .build();
         System.out.println(deadpool);
     }

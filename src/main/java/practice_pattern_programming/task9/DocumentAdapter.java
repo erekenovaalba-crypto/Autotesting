@@ -1,13 +1,13 @@
 package practice_pattern_programming.task9;
 
 public class DocumentAdapter implements DocumentProcessor{
-    private DOCProcessor doc;
-    public DocumentAdapter(DOCProcessor doc){
-        this.doc = doc;
+    private final PDFProcessor pdfProcessor;
+    public DocumentAdapter(PDFProcessor pdfProcessor){
+        this.pdfProcessor = pdfProcessor;
     }
 
     @Override
     public void process() {
-       System.out.println("Преобразование DOC в PDF");
+      pdfProcessor.process();
     }
 }

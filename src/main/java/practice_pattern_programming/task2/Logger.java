@@ -7,7 +7,7 @@ package practice_pattern_programming.task2;
 Класс Logger должен быть реализован по паттерну Singleton, чтобы в приложении был только один экземпляр этого класса,
 который будет использоваться для записи логов.*/
 public class Logger {
-    public static Logger logger;
+    private static Logger logger;
     private Logger(){}
     public static Logger getInstance(){
         if(logger == null){

@@ -2,7 +2,7 @@ package practice_pattern_programming.task7;
 
 public class Order {
     private String product;
-    private String sale;
+    private int sale;
 
     @Override
     public String toString() {
@@ -21,13 +21,13 @@ public class Order {
     }
     public static class OrderBuilder {
         private String product;
-        private String sale;
+        private int sale;
         private String payMethod;
         public  OrderBuilder setProduct(String product){
             this.product = product;
             return this;
         }
-        public OrderBuilder setSale(String sale){
+        public OrderBuilder setSale(int sale){
             this.sale = sale;
             return this;
         }

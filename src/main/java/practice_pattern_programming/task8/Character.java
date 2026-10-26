@@ -1,9 +1,10 @@
 package practice_pattern_programming.task8;
 
 public class Character {
-    private String health;
-    private String damage;
-    private String armor;
+    private int health;
+    private int damage;
+    private int armor;
+    private int magic;
 
     @Override
     public String toString() {
@@ -15,7 +16,7 @@ public class Character {
                 '}';
     }
 
-    private  String magic;
+
     public Character(CharacterBuilder builder){
         this.armor = builder.armor;
         this.damage = builder.damage;
@@ -24,27 +25,27 @@ public class Character {
     }
 
     static class CharacterBuilder{
-        private String health;
-        private String damage;
-        private String armor;
-        private  String magic;
+        private int health;
+        private int damage;
+        private int armor;
+        private int magic;
 
-        public CharacterBuilder setHealth(String health) {
+        public CharacterBuilder setHealth(int health) {
             this.health = health;
             return this;
         }
 
-        public CharacterBuilder setDamage(String damage) {
+        public CharacterBuilder setDamage(int damage) {
             this.damage = damage;
             return this;
         }
 
-        public CharacterBuilder setArmor(String armor) {
+        public CharacterBuilder setArmor(int armor) {
             this.armor = armor;
             return this;
         }
 
-        public CharacterBuilder setMagic(String magic) {
+        public CharacterBuilder setMagic(int magic) {
             this.magic = magic;
             return this;
         }

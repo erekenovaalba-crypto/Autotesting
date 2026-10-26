@@ -1,11 +1,11 @@
 package practice_pattern_programming.task12;
 
-public class SmartHomeAdapter {
-    private ClimateControlSystem climateControlSystem;
-    private LightingSystem lightingSystem;
-    private SecuritySystem securitySystem;
+public class SmartHomeFacade {
+    private final ClimateControlSystem climateControlSystem;
+    private final LightingSystem lightingSystem;
+    private final SecuritySystem securitySystem;
 
-    public SmartHomeAdapter(ClimateControlSystem climateControlSystem, LightingSystem lightingSystem, SecuritySystem securitySystem) {
+    public SmartHomeFacade(ClimateControlSystem climateControlSystem, LightingSystem lightingSystem, SecuritySystem securitySystem) {
         this.climateControlSystem = climateControlSystem;
         this.lightingSystem = lightingSystem;
         this.securitySystem = securitySystem;

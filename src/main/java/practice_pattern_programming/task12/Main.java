@@ -5,7 +5,7 @@ public class Main {
         LightingSystem lightingSystem = new LightingSystem();
         ClimateControlSystem climateControlSystem = new ClimateControlSystem();
         SecuritySystem securitySystem = new SecuritySystem();
-        SmartHomeAdapter smartHomeAdapter = new SmartHomeAdapter(climateControlSystem,lightingSystem,securitySystem);
+        SmartHomeFacade smartHomeAdapter = new SmartHomeFacade(climateControlSystem,lightingSystem,securitySystem);
         smartHomeAdapter.smartHomeTurnOn();
         smartHomeAdapter.smartHomeTurnOf();
     }

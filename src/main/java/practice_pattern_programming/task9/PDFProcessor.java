@@ -1,14 +1,10 @@
 package practice_pattern_programming.task9;
 
 public class PDFProcessor implements DocumentProcessor{
-  private  String fileName;
+  private final String fileName;
 
     public PDFProcessor(String fileName) {
         this.fileName = fileName;
-    }
-
-    public String getFileName() {
-        return fileName;
     }
 
     @Override

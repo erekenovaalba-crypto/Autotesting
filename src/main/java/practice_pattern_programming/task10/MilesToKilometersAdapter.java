@@ -1,7 +1,7 @@
 package practice_pattern_programming.task10;
 
 public class MilesToKilometersAdapter implements Distance{
-    private Miles miles;
+    private final Miles miles;
 
     public MilesToKilometersAdapter(Miles miles) {
         this.miles = miles;
